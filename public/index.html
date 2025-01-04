@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title and Favicon -->
+    <title>Rudhra Bot Web</title>
+    <link rel="icon" href="/favicon.ico" type="image/rudhra-icon" />
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- JavaScript -->
+    <script src="/script.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div style="font-size: 15px; font-weight: bold">RUDHRA BOT</div>
+      <div class="github-container">
+        <a href="https://github.com/princerudh" target="_blank">GitHub</a>
+      </div>
+    </header>
+
+    <!-- Main Image -->
+    <div class="image-container">
+      <img
+        src="https://i.imgur.com/ZwMDRAn.png"
+        alt="rudhra-bot-web"
+        height="110"
+        width="110"
+      />
+    </div>
+
+    <!-- Main Section -->
+    <main>
+      <!-- QR Scan -->
+      <a
+        onclick="window.location='/qr'"
+        class="tile"
+        data-aos="zoom-in"
+        data-aos-duration="500"
+      >
+        <div class="icon">
+          <i class="fa-solid fa-qrcode"></i>
+        </div>
+        <p>Scan QR</p>
+        <div class="tile-share-button">
+          <i class="fa-solid fa-share"></i>
+        </div>
+      </a>
+
+      <!-- Pairing Code -->
+      <a
+        onclick="window.location='/pair'"
+        class="tile"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
+        <div class="icon">
+          <i class="fa-solid fa-keyboard"></i>
+        </div>
+        <p>Enter Code</p>
+        <div class="tile-share-button">
+          <i class="fa-solid fa-share"></i>
+        </div>
+      </a>
+
+      <!-- Rudhra Bot GitHub -->
+      <a
+        href="https://github.com/rudhraan/rudhra-bot"
+        class="tile"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="icon">
+          <i class="fa-brands fa-github"></i>
+        </div>
+        <p>Rudhra GitHub</p>
+        <div class="tile-share-button">
+          <i class="fa-solid fa-share"></i>
+        </div>
+      </a>
+    </main>
+
+    <!-- Footer -->
+    <div class="booter">
+      <a href="#">WhatsApp</a> | 
+      <a href="#">Telegram</a> | 
+      <a href="#">Contact Rudhra Support</a>
+    </div>
+
+    <div class="footer">
+      <footer>
+        <p>made by princerudh</p>
+      </footer>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- TypeIt JS -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script>
+      new TypeIt("#typing", {
+        speed: 50,
+        waitUntilVisible: true,
+      })
+        .type("Mede", { delay: 500 })
+        .move(-2)
+        .delete(1)
+        .type("a")
+        .move(null, { to: "END" })
+        .type(" by", { delay: 100 })
+        .pause(300)
+        .type(" Vuj")
+        .move(-1)
+        .delete(1)
+        .type("a")
+        .move(null, { to: "END" })
+        .type("ira...")
+        .pause(300)
+        .move(-5)
+        .type("")
+        .move(null, { to: "END" })
+        .go();
+    </script>
+  </body>
+</html>
